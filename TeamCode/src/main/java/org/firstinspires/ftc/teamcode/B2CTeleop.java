@@ -1,4 +1,4 @@
 package org.firstinspires.ftc.teamcode;
 
-public class Teleop {
+public class B2CTeleop {
 }
