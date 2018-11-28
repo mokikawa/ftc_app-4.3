@@ -29,8 +29,30 @@ public class B2CDcMotor {
         leftDrive.setDirection(DcMotor.Direction.FORWARD);
         rightDrive.setDirection(DcMotor.Direction.REVERSE);
         armDrive.setDirection(DcMotor.Direction.REVERSE);
+        
+        leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        armDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        
+        //Set motor power
+        leftDrive.setPower(0);
+        rightDrive.setPower(0);
+        armDrive.setPower(0);
     }
 
-    public Robot()
-    {   }
+	//Methods
+    private void stopRobot() {
+	    leftDrive.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+	    rightDrive.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+	    armDrive.setMode(DcMotor.Runmode.RUN_WITHOUT_ENCODER);
+	    
+	    leftDrive.setZeroPowerBehavior.(DcMotor.ZeroPowerBehavior.BRAKE);
+	    rightDrive.setZeroPowerBehavior.(DcMotor.ZeroPowerBehavior.BRAKE);
+	    armDrive.setZeroPowerBehavior.(DcMotor.ZeroPowerBehavior.BRAKE);
+	    
+	    leftDrive.setPower(0);
+	    rightDrive.setPower(0);
+	    armDrive.setPower(0);
+    }
+ 
 }
