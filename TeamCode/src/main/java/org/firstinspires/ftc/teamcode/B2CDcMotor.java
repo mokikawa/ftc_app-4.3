@@ -44,11 +44,11 @@ public class B2CDcMotor {
     private void stopRobot() {
 	    leftDrive.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 	    rightDrive.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-	    armDrive.setMode(DcMotor.Runmode.RUN_WITHOUT_ENCODER);
+	    armDrive.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 	    
-	    leftDrive.setZeroPowerBehavior.(DcMotor.ZeroPowerBehavior.BRAKE);
-	    rightDrive.setZeroPowerBehavior.(DcMotor.ZeroPowerBehavior.BRAKE);
-	    armDrive.setZeroPowerBehavior.(DcMotor.ZeroPowerBehavior.BRAKE);
+	    leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+	    rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+	    armDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 	    
 	    leftDrive.setPower(0);
 	    rightDrive.setPower(0);
